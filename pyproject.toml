@@ -1,0 +1,19 @@
+[project]
+name = "kb-api"
+version = "0.1.0"
+description = "Knowledge Base REST API built with FastAPI: store, manage and search documents."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.162.0",
+    "sqlalchemy>=2.1.6",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
